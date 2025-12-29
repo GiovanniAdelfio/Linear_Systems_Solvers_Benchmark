@@ -29,7 +29,7 @@ For each scenario, the following metrics were plotted against matrix size ($N$):
 2. **Relative Error:** Precision analysis ($||Ax_{calc} - b|| / ||b||$).
 
 <p align="center">
-  <img src="plots/Master_Legend.png" alt="Legend" width="80%">
+  <img src="plots/Master_Legend.png" alt="Legend" width="80%" height = "40%">
 </p>
 
 ### Test 1: Ideal Scenario (SPD Matrices)
