@@ -52,9 +52,24 @@ For each scenario, the following metrics were plotted against matrix size ($N$):
 
 *(Insert your plots here from the presentation file)*
 
-## 🚀 Key Findings
-* **Iterative Methods:** Demonstrated superior speed on SPD matrices (Test 1) but failed to converge on general random matrices (Test 2).
-* **Direct Methods:** QR Factorization showed greater stability than LU on ill-conditioned Poisson matrices (Test 3), albeit at a higher computational cost.
+## 🚀 Key Findings & Conclusions
+
+### 1. Direct Methods: LU vs. QR
+Contrary to the theoretical expectation that Householder QR is unconditionally stable, experimental results showed that **LU with Partial Pivoting** performed slightly better in terms of precision.
+* **Reasoning:** QR factorization involves a significantly higher number of floating-point operations ($\approx 4n^3/3$) compared to LU ($\approx 2n^3/3$). In the tested scenarios, this led to a greater **accumulation of round-off errors**, making QR slightly less accurate than LU despite its orthogonality.
+
+### 2. Pivoting Impact
+The comparison between LU variants highlighted the necessity of pivoting.
+* **LU with Partial Pivoting** achieved drastically lower relative errors compared to the naive implementation.
+* **Cost/Benefit:** The computational overhead of row permutation was negligible, making Partial Pivoting the strictly superior choice for general systems.
+
+### 3. Iterative Methods on Ill-Conditioned Systems (Poisson)
+In Test 3 (Poisson Matrix), simple iterative methods like **Jacobi** technically converged but failed to reduce the error significantly (stalling at $\approx 10^0$).
+* This confirms that for matrices with extremely high condition numbers ($K(A) \gg 1$), simple iterative schemes are ineffective without advanced preconditioning, regardless of iteration count.
+
+### 4. Optimal Solvers
+* **Best for SPD Matrices:** The **Gradient Descent** method proved to be by far the fastest algorithm in Test 1, maintaining high precision.
+* **Best General Solver:** **LU with Partial Pivoting** emerged as the robust winner, offering the best trade-off between computational cost and numerical stability across all test cases.
 
 ---
 *Author: Giovanni Adelfio*
