@@ -28,6 +28,10 @@ For each scenario, the following metrics were plotted against matrix size ($N$):
 1. **Execution Time:** Wall-clock time analysis.
 2. **Relative Error:** Precision analysis ($||Ax_{calc} - b|| / ||b||$).
 
+<p align="center">
+  <img src="plots/Master_Legend.png" alt="Legend" width="80%">
+</p>
+
 ### Test 1: Ideal Scenario (SPD Matrices)
 *Comparison on well-conditioned matrices where all methods converge.*
 | Execution Time | Relative Error |
