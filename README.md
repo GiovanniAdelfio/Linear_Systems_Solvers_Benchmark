@@ -1,12 +1,12 @@
 # Linear Systems Solvers: Benchmark & Physical Application
 
-## 📌 Project Overview
+## Project Overview
 This project performs a comparative analysis of direct and iterative numerical methods for solving linear systems ($Ax = b$).
 The study focuses on **computational efficiency** and **numerical stability**, testing algorithms on both synthetic data and physical models (Poisson equation).
 * [cite_start]**Course:** Numerical Methods (Grade: 30/30) [cite: 9, 13]
 * **Language:** MATLAB (Manual implementation of algorithms).
 
-## 🧪 Experimental Scenarios
+## Experimental Scenarios
 The benchmark is structured into three distinct testing environments to isolate specific algorithmic behaviors:
 
 ### Test 1: Ideal Conditions (SPD Matrices)
@@ -23,7 +23,7 @@ The benchmark is structured into three distinct testing environments to isolate 
 * **Discretization:** Finite Difference Method on $N+2$ points, resulting in an $N \times N$ sparse, ill-conditioned Poisson matrix.
 * **Goal:** Stress-test solvers on a real-world ill-conditioned system arising from differential equations.
 
-## 📊 Metrics & Visualization
+## Metrics & Visualization
 For each scenario, the following metrics were plotted against matrix size ($N$):
 1. **Execution Time:** Wall-clock time analysis.
 2. **Relative Error:** Precision analysis ($||Ax_{calc} - b|| / ||b||$).
@@ -51,7 +51,7 @@ For each scenario, the following metrics were plotted against matrix size ($N$):
 | ![Time Test 3](plots/Test_3_Time.png) | ![Error Test 3](plots/Test_3_Error.png) |
 
 
-## 🚀 Key Findings & Conclusions
+## Key Findings & Conclusions
 
 ### 1. Direct Methods: LU vs. QR
 Contrary to the theoretical expectation that Householder QR is unconditionally stable, experimental results showed that **LU with Partial Pivoting** performed slightly better in terms of precision.
