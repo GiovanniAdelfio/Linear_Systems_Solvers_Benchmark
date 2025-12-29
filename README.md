@@ -32,19 +32,19 @@ For each scenario, the following metrics were plotted against matrix size ($N$):
 *Comparison on well-conditioned matrices where all methods converge.*
 | Execution Time | Relative Error |
 | :---: | :---: |
-| ![Time Test 1](plots/Test_1_Time.fig) | ![Error Test 1](plots/Test_1_Error.fig) |
+| ![Time Test 1](plots/Test_1_Time.png) | ![Error Test 1](plots/Test_1_Error.png) |
 
 ### Test 2: Random Matrices (General Case)
 *Comparison on non-symmetric matrices. Iterative methods excluded due to divergence.*
 | Execution Time | Relative Error |
 | :---: | :---: |
-| ![Time Test 2](plots/Test_2_Time.fig) | ![Error Test 2](plots/Test_2_Error.fig) |
+| ![Time Test 2](plots/Test_2_Time.png) | ![Error Test 2](plots/Test_2_Error.png) |
 
 ### Test 3: Poisson Equation (Ill-Conditioned)
 *Stress test on the Elastic Wire physical model.*
 | Execution Time | Relative Error |
 | :---: | :---: |
-| ![Time Test 3](plots/Test_3_Time.fig) | ![Error Test 3](plots/Test_3_Error.fig) |
+| ![Time Test 3](plots/Test_3_Time.png) | ![Error Test 3](plots/Test_3_Error.png) |
 
 *(Insert your plots here from the presentation file)*
 
