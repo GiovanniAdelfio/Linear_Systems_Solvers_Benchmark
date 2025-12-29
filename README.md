@@ -71,4 +71,4 @@ In Test 3 (Poisson Matrix), simple iterative methods like **Jacobi** technically
 * **Best General Solver:** **LU with Partial Pivoting** emerged as the robust winner, offering the best trade-off between computational cost and numerical stability across all test cases.
 
 ---
-*Author: Giovanni Adelfio* 02/07/2025
+*Author: Giovanni Adelfio, 02/07/2025*
