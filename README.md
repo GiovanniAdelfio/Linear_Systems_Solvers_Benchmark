@@ -50,7 +50,6 @@ For each scenario, the following metrics were plotted against matrix size ($N$):
 | :---: | :---: |
 | ![Time Test 3](plots/Test_3_Time.png) | ![Error Test 3](plots/Test_3_Error.png) |
 
-*(Insert your plots here from the presentation file)*
 
 ## 🚀 Key Findings & Conclusions
 
