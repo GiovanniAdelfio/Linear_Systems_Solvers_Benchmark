@@ -63,7 +63,7 @@ The comparison between LU variants highlighted the necessity of pivoting.
 * **Cost/Benefit:** The computational overhead of row permutation was negligible, making Partial Pivoting the strictly superior choice for general systems.
 
 ### 3. Iterative Methods on Ill-Conditioned Systems (Poisson)
-In Test 3 (Poisson Matrix), simple iterative methods like **Jacobi** technically converged but failed to reduce the error significantly (stalling at $\approx 10^0$).
+In Test 3 (Poisson Matrix), simple iterative methods like **Richardson** technically converged but failed to reduce the error significantly (stalling at $\approx 10^0$).
 * This confirms that for matrices with extremely high condition numbers ($K(A) \gg 1$), simple iterative schemes are ineffective without advanced preconditioning, regardless of iteration count.
 
 ### 4. Optimal Solvers
