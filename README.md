@@ -3,7 +3,7 @@
 ## Project Overview
 This project performs a comparative analysis of direct and iterative numerical methods for solving linear systems ($Ax = b$).
 The study focuses on **computational efficiency** and **numerical stability**, testing algorithms on both synthetic data and physical models (Poisson equation).
-* [cite_start]**Course:** Numerical Methods (Grade: 30/30) [cite: 9, 13]
+* **Course:** Numerical Methods (Grade: 30/30) 
 * **Language:** MATLAB (Manual implementation of algorithms).
 
 ## Experimental Scenarios
